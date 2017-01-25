@@ -15,8 +15,12 @@ describe('Mesaforte-ui Demo App', function(){
 
     //browser.wait(element(by.css(".topnavbar")).isPresent());
     //Filter Results
-    expect(element(by.model('beanCtrl.gridOptions.quickFilterText')).isPresent()).toBe(true);
+    expect(element(by.model('beanCtrl.gridOptions.quickFilterText12')).isPresent()).toBe(true);
     element(by.model('beanCtrl.gridOptions.quickFilterText')).sendKeys('dent');
+    //Search
+    expect(element(by.model('beanCtrl.pages.category1')).isPresent()).toBe(true);
+    element(by.model('beanCtrl.pages.category')).sendKeys('built-in');
+    element(by.buttonText('Search')).click();
     
     /*browser.driver.wait(function() {
             return element(by.css('topnavbar')).isDisplayed().then(function(IsVisible) {
