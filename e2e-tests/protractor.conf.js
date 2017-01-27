@@ -33,5 +33,4 @@ exports.config = {
                     excludeKeywords: ['keyword1', 'keyword2']
                 }
       }]
-
 };

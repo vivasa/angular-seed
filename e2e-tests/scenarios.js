@@ -1,4 +1,3 @@
-
 describe('Mesaforte-ui Demo App', function(){
   beforeEach(function() {
     
@@ -27,8 +26,6 @@ describe('Mesaforte-ui Demo App', function(){
                 return IsVisible;
             });
         }, 10000);*/
-
-
 
   });
 
